@@ -72,7 +72,7 @@ const Services = () => {
         <div className="relative z-10 section flex flex-col justify-center">
           <AnimatedSection>
             <div className="backdrop-blur-sm bg-white/10 p-10 rounded-3xl border border-white/20 shadow-xl max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center rounded-full border border-white/30 px-2.5 py-1.5 text-xs font-semibold bg-white/20 hover:bg-white/30 mb-4 backdrop-blur-sm text-white">
+              <div className="inline-flex items-center rounded-full border border-white/30 px-2.5 py-1.5 text-xs font-semibold bg-white/20 hover:bg-white/30 mb-6 backdrop-blur-sm text-white">
                 Premium Hair & Beauty Services
               </div>
               
@@ -306,7 +306,7 @@ const Services = () => {
       <section>
         <div className="section py-16">
           <AnimatedSection>
-            <Card className="border-2 border-rose/30 bg-gradient-to-r from-rose/10 to-sage/10 overflow-hidden relative rounded-3xl shadow-xl">
+            <Card className="border-2 border-rose/30 bg-white overflow-hidden relative rounded-3xl shadow-xl">
               <div className="absolute -right-16 -top-16 w-64 h-64 bg-rose/10 rounded-full blur-3xl"></div>
               <div className="absolute -left-16 -bottom-16 w-64 h-64 bg-sage/10 rounded-full blur-3xl"></div>
               
