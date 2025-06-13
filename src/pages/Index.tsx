@@ -28,9 +28,9 @@ const Index = () => {
         <div className="section relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="lg:w-1/2 text-center lg:text-left">
             <AnimatedSection>
-              <Badge variant="outline" className="bg-white/20 border-white/30 mb-4 py-1.5 backdrop-blur-sm" style={{ color: 'white' }}>
+              <div className="inline-flex items-center rounded-full border border-white/30 px-2.5 py-1.5 text-xs font-semibold bg-white/20 hover:bg-white/30 mb-4 backdrop-blur-sm text-white">
                 Your Premier Destination for Beauty
-              </Badge>
+              </div>
               
               <h1 className="font-outfit font-bold text-5xl md:text-6xl lg:text-7xl mb-6 text-white">
                 Where <span className="text-gradient">Style</span> Meets <span className="text-gradient">Excellence</span>
