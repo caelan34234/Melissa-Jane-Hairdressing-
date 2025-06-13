@@ -15,7 +15,7 @@ const trustStats: TrustStatItem[] = [
     icon: <Scissors className="w-4 h-4 text-sage" />
   },
   {
-    value: "20+",
+    value: "10+",
     text: "Years of Experience",
     icon: <Building className="w-4 h-4 text-sage" />
   },
