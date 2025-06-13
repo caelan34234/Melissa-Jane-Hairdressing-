@@ -207,27 +207,44 @@
       background-color: #7BA78C !important;
     }
     
-    /* Fix hamburger menu icon visibility */
+    /* Fix hamburger menu icon visibility - more specific targeting */
     .md\:hidden button[class*="ghost"] {
       background-color: transparent !important;
+      border: none !important;
     }
     
-    .md\:hidden button[class*="ghost"] svg {
+    .md\:hidden button[class*="ghost"] svg,
+    .md\:hidden button svg.lucide-menu {
       color: #7BA78C !important;
-      fill: #7BA78C !important;
+      fill: currentColor !important;
+      stroke: #7BA78C !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    
+    /* Ensure hamburger button container is visible */
+    .md\:hidden button[class*="ghost"] {
+      opacity: 1 !important;
+      visibility: visible !important;
+      display: flex !important;
     }
     
     /* Fix service category buttons - prevent yellow backgrounds */
     button[class*="border-sage"],
-    button[class*="border-rose"] {
+    button[class*="border-rose"],
+    .group:hover button[class*="border-sage"],
+    .group:hover button[class*="border-rose"] {
       background-color: transparent !important;
+      -webkit-appearance: none !important;
     }
     
-    button[class*="border-sage"]:hover {
+    button[class*="border-sage"]:hover,
+    .group:hover button[class*="border-sage"] {
       background-color: rgba(123, 167, 140, 0.1) !important;
     }
     
-    button[class*="border-rose"]:hover {
+    button[class*="border-rose"]:hover,
+    .group:hover button[class*="border-rose"] {
       background-color: rgba(226, 149, 157, 0.1) !important;
     }
     
@@ -248,15 +265,26 @@
       color: #E2959D !important;
     }
     
-    /* Remove diagonal overlay from mobile navigation */
-    .bg-gradient-to-br.from-white.via-white.to-sage\/10::before,
-    .bg-gradient-to-br.from-white.via-white.to-sage\/10::after {
-      display: none !important;
+    /* Remove diagonal overlay from mobile navigation - comprehensive fix */
+    .bg-gradient-to-br.from-white.via-white.to-sage\/10,
+    [data-radix-dialog-content],
+    .fixed.inset-0.z-50 > div {
+      background: white !important;
+      background-image: none !important;
     }
     
-    /* Ensure mobile sheet content has solid background */
-    [data-radix-dialog-content] {
-      background: white !important;
+    /* Remove any pseudo-elements that might create diagonal lines */
+    .bg-gradient-to-br.from-white.via-white.to-sage\/10::before,
+    .bg-gradient-to-br.from-white.via-white.to-sage\/10::after,
+    [data-radix-dialog-content]::before,
+    [data-radix-dialog-content]::after {
+      display: none !important;
+      content: none !important;
+    }
+    
+    /* Ensure sheet overlay is completely transparent */
+    [data-radix-dialog-overlay] {
+      background: rgba(0, 0, 0, 0.5) !important;
     }
     
     /* Fix badge text visibility on mobile webkit browsers */
