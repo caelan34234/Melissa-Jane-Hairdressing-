@@ -89,7 +89,7 @@ const About = () => {
           <AnimatedSection>
             <div className="backdrop-blur-sm bg-white/10 p-10 rounded-3xl border border-white/20 shadow-xl max-w-3xl mx-auto text-center">
               <Badge className="bg-white/20 text-white hover:bg-white/30 mb-6 backdrop-blur-sm">
-                Our Journey Since 2003
+                Our Journey Since 2015
               </Badge>
               
               <h1 className="font-outfit font-extrabold text-hero leading-tight mb-6 text-white drop-shadow-md">
@@ -97,7 +97,7 @@ const About = () => {
               </h1>
               
               <p className="text-xl mb-8 text-white/90 leading-relaxed">
-                Two decades of passion, expertise, and transforming lives through the art of beautiful hair.
+                10 years of passion, expertise, and transforming lives through the art of beautiful hair.
               </p>
             </div>
           </AnimatedSection>
@@ -152,7 +152,7 @@ const About = () => {
                 
                 {/* Floating badge */}
                 <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl rotate-6">
-                  <p className="text-sage font-bold">20+ Years<br/>Experience</p>
+                  <p className="text-sage font-bold">10 Years<br/>Experience</p>
                 </div>
               </div>
             </AnimatedSection>
@@ -162,7 +162,7 @@ const About = () => {
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p className="text-lg">
                     Welcome to Melissa Jane Hairdressing, where passion meets expertise in the heart of Melbourne. 
-                    For over two decades, I've been dedicated to helping clients discover their most beautiful selves 
+                    For 10 years, I've been dedicated to helping clients discover their most beautiful selves 
                     through personalized hair artistry.
                   </p>
                   <p>
@@ -172,12 +172,12 @@ const About = () => {
                   </p>
                   <p>
                     Specializing in balayage and color correction, I've had the privilege of transforming thousands 
-                    of clients' looks while building lasting relationships within our community. Our salon isn't just 
-                    a place for beautiful hair – it's a sanctuary where you can relax, rejuvenate, and rediscover 
+                    of clients looks while building lasting relationships within our community. Our salon is 
+                    a place for beautiful hair and a sanctuary where you can relax, rejuvenate, and rediscover 
                     your confidence.
                   </p>
                   <p>
-                    When you step into our space, you're not just a client – you're part of our extended family. 
+                    When you step into our space, you are not just a client, you are part of our extended family. 
                     We believe in celebrating individuality, embracing sustainability, and creating an inclusive 
                     environment where everyone feels welcome and valued.
                   </p>
