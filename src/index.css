@@ -518,6 +518,34 @@
       visibility: visible !important;
       background-color: rgba(255, 255, 255, 0.2) !important;
       border-color: rgba(255, 255, 255, 0.3) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+    
+    /* Mobile glassmorphic effect for hero tags */
+    .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.items-center.rounded-full.border.border-white\/30,
+    .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.rounded-full.border.border-white\/30,
+    .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.items-center.rounded-full.border,
+    .backdrop-blur-sm.bg-white\/10.p-10 .inline-flex.items-center.rounded-full.border,
+    /* Target the exact tag classes used in the pages */
+    .inline-flex.items-center.rounded-full.border.border-white\/30.px-2\.5.py-1\.5.text-xs.font-semibold.bg-white\/20.hover\:bg-white\/30.mb-6.backdrop-blur-sm.text-white,
+    .inline-flex.items-center.rounded-full.border.border-white\/30.px-2\.5.py-1\.5.text-xs.font-semibold.bg-white\/20.hover\:bg-white\/30.mb-4.backdrop-blur-sm.text-white,
+    /* Target any tag in the hero section */
+    section:first-of-type .inline-flex.items-center.rounded-full.border.border-white\/30 {
+      background-color: rgba(255, 255, 255, 0.2) !important;
+      border-color: rgba(255, 255, 255, 0.3) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      background: rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    /* Force glassmorphic effect on all hero tags */
+    .inline-flex.items-center.rounded-full.border.px-2\.5.py-1\.5.text-xs.font-semibold.bg-white\/20 {
+      background-color: rgba(255, 255, 255, 0.2) !important;
+      border-color: rgba(255, 255, 255, 0.3) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      background: rgba(255, 255, 255, 0.2) !important;
     }
     
     /* Brute force approach - make all text in these tags white */
@@ -532,6 +560,8 @@
 .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.rounded-full.border.border-white\/30 {
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
 }
 
     /* Fix mobile navigation gradient */
