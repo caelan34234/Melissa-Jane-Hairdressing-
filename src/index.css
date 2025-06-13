@@ -433,6 +433,17 @@
       color: #E2959D !important;
     }
     
+    /* Fix Services page toggle button visibility on mobile */
+    .bg-sage.text-white {
+      background-color: #7BA78C !important;
+      color: white !important;
+    }
+    
+    .bg-rose.text-white {
+      background-color: #E2959D !important;
+      color: white !important;
+    }
+    
     /* Remove diagonal overlay from mobile navigation */
     .bg-gradient-to-br.from-white.via-white.to-sage\/10::before,
     .bg-gradient-to-br.from-white.via-white.to-sage\/10::after {
