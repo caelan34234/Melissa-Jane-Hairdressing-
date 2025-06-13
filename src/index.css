@@ -207,45 +207,49 @@
       background-color: #7BA78C !important;
     }
     
-    /* Fix hamburger menu icon visibility - more specific targeting */
+    /* Fix hamburger menu icon visibility */
     .md\:hidden button[class*="ghost"] {
       background-color: transparent !important;
-      border: none !important;
     }
     
-    .md\:hidden button[class*="ghost"] svg,
-    .md\:hidden button svg.lucide-menu {
+    .md\:hidden button[class*="ghost"] svg {
       color: #7BA78C !important;
-      fill: currentColor !important;
-      stroke: #7BA78C !important;
+      fill: #7BA78C !important;
       opacity: 1 !important;
       visibility: visible !important;
+      display: block !important;
     }
     
-    /* Ensure hamburger button container is visible */
-    .md\:hidden button[class*="ghost"] {
+    /* Ensure hamburger icon is visible on all browsers */
+    button svg[class*="h-6"][class*="w-6"] {
+      color: #7BA78C !important;
+      fill: #7BA78C !important;
       opacity: 1 !important;
       visibility: visible !important;
-      display: flex !important;
+      display: block !important;
     }
     
     /* Fix service category buttons - prevent yellow backgrounds */
     button[class*="border-sage"],
     button[class*="border-rose"],
-    .group:hover button[class*="border-sage"],
-    .group:hover button[class*="border-rose"] {
+    a[href*="/book"] button,
+    button[class*="variant-outline"] {
       background-color: transparent !important;
       -webkit-appearance: none !important;
     }
     
-    button[class*="border-sage"]:hover,
-    .group:hover button[class*="border-sage"] {
+    button[class*="border-sage"]:hover {
       background-color: rgba(123, 167, 140, 0.1) !important;
     }
     
-    button[class*="border-rose"]:hover,
-    .group:hover button[class*="border-rose"] {
+    button[class*="border-rose"]:hover {
       background-color: rgba(226, 149, 157, 0.1) !important;
+    }
+    
+    /* Fix book now button on hover */
+    .group-hover\:opacity-100 button {
+      background-color: transparent !important;
+      -webkit-appearance: none !important;
     }
     
     /* Fix explore all services button */
@@ -265,26 +269,25 @@
       color: #E2959D !important;
     }
     
-    /* Remove diagonal overlay from mobile navigation - comprehensive fix */
-    .bg-gradient-to-br.from-white.via-white.to-sage\/10,
-    [data-radix-dialog-content],
-    .fixed.inset-0.z-50 > div {
+    /* Remove diagonal overlay from mobile navigation */
+    .bg-gradient-to-br.from-white.via-white.to-sage\/10::before,
+    .bg-gradient-to-br.from-white.via-white.to-sage\/10::after {
+      display: none !important;
+    }
+    
+    /* Ensure mobile sheet content has solid background */
+    [data-radix-dialog-content] {
       background: white !important;
       background-image: none !important;
+      background-color: white !important;
     }
     
-    /* Remove any pseudo-elements that might create diagonal lines */
-    .bg-gradient-to-br.from-white.via-white.to-sage\/10::before,
-    .bg-gradient-to-br.from-white.via-white.to-sage\/10::after,
-    [data-radix-dialog-content]::before,
-    [data-radix-dialog-content]::after {
-      display: none !important;
-      content: none !important;
-    }
-    
-    /* Ensure sheet overlay is completely transparent */
-    [data-radix-dialog-overlay] {
-      background: rgba(0, 0, 0, 0.5) !important;
+    /* Completely remove any diagonal or gradient effects from mobile nav */
+    div[class*="SheetContent"],
+    div[role="dialog"] {
+      background: white !important;
+      background-image: none !important;
+      background-color: white !important;
     }
     
     /* Fix badge text visibility on mobile webkit browsers */
@@ -297,7 +300,9 @@
 
     /* Fix mobile navigation gradient */
     .bg-gradient-to-br.from-white.via-white.to-sage\/10 {
-      background: linear-gradient(to bottom right, white, white, rgba(123, 167, 140, 0.1)) !important;
+      background: white !important;
+      background-image: none !important;
+      background-color: white !important;
     }
 
     /* Prevent yellow autofill on all form elements */
