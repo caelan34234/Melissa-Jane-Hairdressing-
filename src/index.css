@@ -521,11 +521,18 @@
     }
     
     /* Brute force approach - make all text in these tags white */
-    .backdrop-blur-sm.bg-white\/10.p-10 .inline-flex.items-center.rounded-full.border * {
-      -webkit-text-fill-color: white !important;
-      color: white !important;
-      text-shadow: 0 0 1px rgba(0, 0, 0, 0.5) !important;
-    }
+.backdrop-blur-sm.bg-white\/10.p-10 .inline-flex.items-center.rounded-full.border * {
+  -webkit-text-fill-color: white !important;
+  color: white !important;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Glassmorphic tag styles for hero sections */
+.backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.items-center.rounded-full.border.border-white\/30,
+.backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.rounded-full.border.border-white\/30 {
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
 
     /* Fix mobile navigation gradient */
     .bg-gradient-to-br.from-white.via-white.to-sage\/10 {
