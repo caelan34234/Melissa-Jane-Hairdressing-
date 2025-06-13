@@ -534,6 +534,64 @@
   -webkit-backdrop-filter: blur(8px) !important;
 }
 
+/* Mobile-specific glassmorphic tag styles */
+@media (max-width: 768px) {
+  /* Target the tags in About, Services, and Book pages */
+  .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.items-center.rounded-full.border,
+  .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.rounded-full.border {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  /* Fix the parent container background to ensure it's not solid white */
+  .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+  }
+  
+  /* Override any potential white background settings for these elements */
+  div[class*="backdrop-blur-sm"][class*="bg-white/10"],
+  div[class*="backdrop-blur-sm"][class*="bg-white/10"] * {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Ensure the tag itself has the correct styling */
+  div[class*="backdrop-blur-sm"][class*="bg-white/10"] .inline-flex.rounded-full.border,
+  div[class*="backdrop-blur-sm"][class*="bg-white/10"] .inline-flex.items-center.rounded-full.border,
+  .inline-flex.items-center.rounded-full.border.border-white\/30.px-2\.5.py-1\.5.text-xs.font-semibold.bg-white\/20.hover\:bg-white\/30.mb-6,
+  .inline-flex.items-center.rounded-full.border.border-white\/30.px-2\.5.py-1\.5.text-xs.font-semibold.bg-white\/20.hover\:bg-white\/30.mb-4 {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  /* Target all tags in hero sections with more widely supported selectors */
+  section:first-of-type .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.items-center.rounded-full.border,
+  section:first-of-type .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl .inline-flex.rounded-full.border {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  /* Target the container of the tags to ensure it's not white */
+  section:first-of-type .backdrop-blur-sm.bg-white\/10.p-10.rounded-3xl {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+  }
+}
+
     /* Fix mobile navigation gradient */
     .bg-gradient-to-br.from-white.via-white.to-sage\/10 {
       background: white !important;
