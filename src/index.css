@@ -207,6 +207,58 @@
       background-color: #7BA78C !important;
     }
     
+    /* Fix hamburger menu icon visibility */
+    .md\:hidden button[class*="ghost"] {
+      background-color: transparent !important;
+    }
+    
+    .md\:hidden button[class*="ghost"] svg {
+      color: #7BA78C !important;
+      fill: #7BA78C !important;
+    }
+    
+    /* Fix service category buttons - prevent yellow backgrounds */
+    button[class*="border-sage"],
+    button[class*="border-rose"] {
+      background-color: transparent !important;
+    }
+    
+    button[class*="border-sage"]:hover {
+      background-color: rgba(123, 167, 140, 0.1) !important;
+    }
+    
+    button[class*="border-rose"]:hover {
+      background-color: rgba(226, 149, 157, 0.1) !important;
+    }
+    
+    /* Fix explore all services button */
+    button[class*="border-rich-black"] {
+      background-color: transparent !important;
+      border-color: rgba(24, 24, 24, 0.7) !important;
+      color: rgba(24, 24, 24, 0.7) !important;
+    }
+    
+    button[class*="border-rich-black"]:hover {
+      background-color: rgba(24, 24, 24, 0.05) !important;
+    }
+    
+    /* Fix beauty services text visibility */
+    button[class*="bg-rose/20"] {
+      background-color: rgba(226, 149, 157, 0.2) !important;
+      color: #E2959D !important;
+    }
+    
+    /* Remove diagonal overlay from mobile navigation */
+    .bg-gradient-to-br.from-white.via-white.to-sage\/10::before,
+    .bg-gradient-to-br.from-white.via-white.to-sage\/10::after {
+      display: none !important;
+    }
+    
+    /* Ensure mobile sheet content has solid background */
+    [data-radix-dialog-content] {
+      background: white !important;
+    }
+    
     /* Fix badge text visibility on mobile webkit browsers */
     .inline-flex.items-center.rounded-full.border,
     [class*="badge"],
