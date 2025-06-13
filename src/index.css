@@ -60,7 +60,7 @@
     @apply font-outfit font-bold tracking-tight;
   }
 
-  /* Fix autofill yellow background on mobile */
+  /* Fix autofill yellow background on mobile - Enhanced */
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
@@ -77,9 +77,23 @@
     -webkit-text-fill-color: #181818 !important;
     background-color: white !important;
     background-image: none !important;
+    transition: background-color 5000s ease-in-out 0s !important;
   }
 
-  /* Fix mobile webkit button styling */
+  /* Fix autofill for form inputs specifically */
+  .form-input:-webkit-autofill,
+  [data-form-input]:-webkit-autofill,
+  input[type="text"]:-webkit-autofill,
+  input[type="email"]:-webkit-autofill,
+  input[type="tel"]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #181818 !important;
+    background-color: white !important;
+    background-image: none !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+  }
+
+  /* Fix mobile webkit button styling - Enhanced */
   button,
   input[type="button"],
   input[type="submit"],
@@ -90,7 +104,24 @@
     background-color: transparent;
   }
 
-  /* Ensure consistent background colors on mobile */
+  /* Prevent yellow highlighting on buttons and interactive elements */
+  button,
+  .btn,
+  [role="button"],
+  .button {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+  }
+
+  /* Fix button background colors on mobile webkit */
+  button:not([class*="bg-"]),
+  .btn:not([class*="bg-"]) {
+    background-color: transparent !important;
+  }
+
+  /* Ensure consistent background colors on mobile - Enhanced */
   @media (max-width: 768px) {
     .bg-white {
       background-color: white !important;
@@ -99,19 +130,82 @@
     .bg-transparent {
       background-color: transparent !important;
     }
+
+    /* Fix card backgrounds on mobile */
+    .bg-gradient-to-r {
+      background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+    }
+
+    /* Prevent webkit from changing button colors */
+    button[class*="bg-"],
+    .btn[class*="bg-"] {
+      -webkit-appearance: none !important;
+      background-color: var(--button-bg) !important;
+    }
+
+    /* Fix specific button classes */
+    .bg-rose {
+      background-color: #E2959D !important;
+    }
+
+    .bg-sage {
+      background-color: #7BA78C !important;
+    }
+
+    /* Fix mobile navigation gradient issue */
+    .bg-gradient-to-br {
+      background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)) !important;
+    }
+
+    /* Prevent autofill styling on mobile forms */
+    form input,
+    form select,
+    form textarea {
+      -webkit-appearance: none !important;
+      -webkit-box-shadow: none !important;
+      background-color: white !important;
+    }
+
+    /* Fix special offer card background */
+    .bg-gradient-to-r.from-rose\/10.to-sage\/10 {
+      background: linear-gradient(to right, rgba(226, 149, 157, 0.1), rgba(123, 167, 140, 0.1)) !important;
+    }
+    }
     
     /* Remove tap highlights */
     * {
       -webkit-tap-highlight-color: transparent;
     }
     
-    /* Fix webkit autofill on mobile */
+    /* Fix webkit autofill on mobile - Enhanced */
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,
-    input:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0 30px white inset !important;
+    input:-webkit-autofill:active,
+    select:-webkit-autofill,
+    textarea:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px white inset !important;
       -webkit-text-fill-color: #181818 !important;
+      background-color: white !important;
+      background-image: none !important;
+      transition: background-color 5000s ease-in-out 0s !important;
+    }
+
+    /* Additional mobile webkit fixes */
+    input,
+    select,
+    textarea {
+      -webkit-appearance: none !important;
+      background-color: white !important;
+    }
+
+    /* Fix button colors specifically on mobile */
+    button[class*="bg-rose"] {
+      background-color: #E2959D !important;
+    }
+
+    button[class*="bg-sage"] {
+      background-color: #7BA78C !important;
     }
     
     /* Fix badge text visibility on mobile webkit browsers */
@@ -120,6 +214,28 @@
     .bg-white\/20.text-white {
       -webkit-text-fill-color: currentColor !important;
       color: white !important;
+    }
+
+    /* Fix mobile navigation gradient */
+    .bg-gradient-to-br.from-white.via-white.to-sage\/10 {
+      background: linear-gradient(to bottom right, white, white, rgba(123, 167, 140, 0.1)) !important;
+    }
+
+    /* Prevent yellow autofill on all form elements */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    select,
+    textarea {
+      -webkit-box-shadow: none !important;
+      background-color: white !important;
+      background-image: none !important;
+    }
+
+    /* Fix card gradient backgrounds */
+    .bg-gradient-to-r.from-rose\/10 {
+      background: linear-gradient(to right, rgba(226, 149, 157, 0.1), rgba(123, 167, 140, 0.1)) !important;
     }
   }
 }
