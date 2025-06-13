@@ -96,30 +96,13 @@
       background-color: white !important;
     }
     
-    .bg-transparent {
-      background-color: transparent !important;
+    .bg-background {
+      background-color: white !important;
     }
     
-    /* Remove tap highlights */
+    /* Fix any potential mobile-specific yellow backgrounds */
     * {
       -webkit-tap-highlight-color: transparent;
-    }
-    
-    /* Fix webkit autofill on mobile */
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    input:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0 30px white inset !important;
-      -webkit-text-fill-color: #181818 !important;
-    }
-    
-    /* Fix badge text visibility on mobile webkit browsers */
-    .inline-flex.items-center.rounded-full.border,
-    [class*="badge"],
-    .bg-white\/20.text-white {
-      -webkit-text-fill-color: currentColor !important;
-      color: white !important;
     }
   }
 }
