@@ -170,7 +170,6 @@
     .bg-gradient-to-r.from-rose\/10.to-sage\/10 {
       background: linear-gradient(to right, rgba(226, 149, 157, 0.1), rgba(123, 167, 140, 0.1)) !important;
     }
-    }
     
     /* Remove tap highlights */
     * {
