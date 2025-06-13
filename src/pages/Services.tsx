@@ -306,7 +306,7 @@ const Services = () => {
       <section>
         <div className="section py-16">
           <AnimatedSection>
-            <Card className="border-2 border-rose/30 bg-white overflow-hidden relative rounded-3xl shadow-xl">
+            <Card className="border-2 border-rose/30 bg-gradient-to-r from-rose/10 to-sage/10 overflow-hidden relative rounded-3xl shadow-xl">
               <div className="absolute -right-16 -top-16 w-64 h-64 bg-rose/10 rounded-full blur-3xl"></div>
               <div className="absolute -left-16 -bottom-16 w-64 h-64 bg-sage/10 rounded-full blur-3xl"></div>
               

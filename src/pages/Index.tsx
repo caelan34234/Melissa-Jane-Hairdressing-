@@ -220,7 +220,7 @@ const Index = () => {
                 <Button 
                   variant={activeCategory === 'beauty' ? 'default' : 'outline'}
                   onClick={() => setActiveCategory('beauty')}
-                  className={activeCategory === 'beauty' ? 'bg-rose hover:bg-rose/90 text-white' : 'border-rose text-rose hover:bg-rose/10'}
+                  className={activeCategory === 'beauty' ? 'bg-rose hover:bg-rose/90' : 'border-rose text-rose hover:bg-rose/10'}
                 >
                   Beauty Services
                 </Button>
@@ -277,7 +277,7 @@ const Index = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <Button asChild variant="outline" size="lg" className="border-rich-black/70 text-rich-black/70 hover:bg-rich-black/5 bg-white">
+            <Button asChild variant="outline" size="lg" className="border-rich-black/70 text-rich-black/70 hover:bg-rich-black/5">
               <Link to="/services" className="flex items-center gap-2">
                 Explore All Services <ArrowRight className="h-4 w-4" />
               </Link>

@@ -77,32 +77,6 @@
     -webkit-text-fill-color: #181818 !important;
     background-color: white !important;
     background-image: none !important;
-    transition: background-color 5000s ease-in-out 0s !important;
-    caret-color: #181818 !important;
-  }
-  
-  /* Additional fix for Chrome and Safari on mobile */
-  @media (max-width: 768px) {
-    input, select, textarea, .select-trigger, button, .button {
-      -webkit-appearance: none !important;
-      appearance: none !important;
-      background-color: white !important;
-      background-image: none !important;
-    }
-    
-    /* Fix for buttons with specific classes */
-    button[class*="bg-rose"], a[class*="bg-rose"] {
-      background-color: #E2959D !important;
-    }
-    
-    button[class*="bg-sage"], a[class*="bg-sage"] {
-      background-color: #7BA78C !important;
-    }
-    
-    /* Fix for gradient backgrounds */
-    [class*="bg-gradient"] {
-      background-image: var(--tw-gradient-stops) !important;
-    }
   }
 
   /* Fix mobile webkit button styling */
