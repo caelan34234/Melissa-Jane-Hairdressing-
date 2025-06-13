@@ -270,25 +270,54 @@
       background: rgba(226, 149, 157, 0.1) !important;
     }
     
-    /* Fix book now button on hover */
+    /* Fix book now button on hover - Enhanced */
     .group-hover\:opacity-100 button,
     .opacity-0.group-hover\:opacity-100 button,
     .transform.group-hover\:translate-y-0 button,
     div[class*="group-hover"] button,
-    div[class*="transition-all"] button {
+    div[class*="transition-all"] button,
+    .mt-auto button,
+    [class*="Book now"] button,
+    a[href="/book"] button,
+    button a[href="/book"],
+    .w-full[class*="border-"] {
       background-color: transparent !important;
       background: transparent !important;
+      background-image: none !important;
       -webkit-appearance: none !important;
       -webkit-box-shadow: none !important;
+      -webkit-tap-highlight-color: transparent !important;
+      -webkit-user-select: none !important;
+      -webkit-background-color: transparent !important;
     }
     
-    /* Target service card buttons specifically */
+    /* Target service card buttons specifically - Ultra specific */
     .relative.h-full.p-6.rounded-2xl button,
-    .relative.h-full.p-6.rounded-2xl a button {
+    .relative.h-full.p-6.rounded-2xl a button,
+    div[class*="rounded-2xl"] button,
+    div[class*="border-2"] button,
+    div[class*="border-gray-200"] button,
+    div[class*="bg-white/50"] button,
+    div[class*="backdrop-blur-sm"] button,
+    div[class*="shadow-md"] button,
+    div[class*="hover:shadow-lg"] button,
+    div[class*="transition-all"] button,
+    div[class*="duration-300"] button,
+    div[class*="overflow-hidden"] button,
+    div[class*="mt-auto"] button,
+    div[class*="opacity-0"] button,
+    div[class*="transform"] button,
+    div[class*="translate-y-4"] button,
+    div[class*="group-hover:opacity-100"] button,
+    div[class*="group-hover:translate-y-0"] button {
       background-color: transparent !important;
       background: transparent !important;
+      background-image: none !important;
       -webkit-appearance: none !important;
       -webkit-box-shadow: none !important;
+      -webkit-tap-highlight-color: transparent !important;
+      -webkit-user-select: none !important;
+      -webkit-background-color: transparent !important;
     }
     
     /* Fix explore all services button */
@@ -301,14 +330,34 @@
       -webkit-box-shadow: none !important;
     }
     
-    /* Fix explore all services button */
-    button[class*="border-rich-black"] {
+    /* Fix explore all services button - Ultra specific */
+    button[class*="border-rich-black"],
+    .mt-12.text-center button,
+    a[href="/services"] button,
+    button a[href="/services"],
+    button[class*="text-rich-black"],
+    button[class*="flex items-center gap-2"],
+    button.border-rich-black\/70,
+    button[size="lg"],
+    button[class*="size-lg"],
+    button[class*="hover:bg-rich-black"],
+    button[class*="hover\:bg-rich-black"],
+    a[class*="flex items-center gap-2"],
+    div[class*="mt-12"] button,
+    div[class*="text-center"] button,
+    button[class*="border-rich-black/70"],
+    button[class*="text-rich-black/70"],
+    button[class*="hover:bg-rich-black/5"] {
       background-color: transparent !important;
       background: transparent !important;
+      background-image: none !important;
       border-color: rgba(24, 24, 24, 0.7) !important;
       color: rgba(24, 24, 24, 0.7) !important;
       -webkit-appearance: none !important;
       -webkit-box-shadow: none !important;
+      -webkit-tap-highlight-color: transparent !important;
+      -webkit-user-select: none !important;
+      -webkit-background-color: transparent !important;
     }
     
     button[class*="border-rich-black"]:hover {
@@ -316,22 +365,55 @@
       background: rgba(24, 24, 24, 0.05) !important;
     }
     
-    /* Global button fix for mobile */
+    /* Global button fix for mobile - Enhanced */
     button[variant="outline"],
     button[class*="variant-outline"],
     button[class*="outline"],
     a button[class*="outline"],
     button.inline-flex,
-    a.inline-flex button {
+    a.inline-flex button,
+    button[class*="hover:bg-"],
+    button[class*="hover\:bg-"],
+    button[class*="size-lg"],
+    button[class*="border"],
+    button[class*="text-"],
+    button[class*="w-full"],
+    button[class*="flex"],
+    button[class*="items-center"],
+    button[class*="justify-center"],
+    button[class*="gap-"] {
       background-color: transparent !important;
       background: transparent !important;
+      background-image: none !important;
       -webkit-appearance: none !important;
       -webkit-box-shadow: none !important;
+      -webkit-tap-highlight-color: transparent !important;
+      -webkit-user-select: none !important;
+      -webkit-background-color: transparent !important;
     }
     
-    /* Force all buttons to respect background color */
+    /* Force all buttons to respect background color - Aggressive fix */
     button {
       -webkit-appearance: none !important;
+      background-color: transparent !important;
+      background: transparent !important;
+      background-image: none !important;
+      -webkit-box-shadow: none !important;
+      -webkit-tap-highlight-color: transparent !important;
+      -webkit-user-select: none !important;
+    }
+    
+    /* Only allow specific buttons to have backgrounds */
+    button[class*="bg-rose"],
+    button[class*="bg-sage"] {
+      background-color: var(--button-bg, inherit) !important;
+    }
+    
+    /* Fix for buttons with hover states */
+    button:hover {
+      background-color: var(--hover-bg, transparent) !important;
+      background: var(--hover-bg, transparent) !important;
+      background-image: none !important;
     }
     
     /* Ensure no yellow autofill on buttons */
