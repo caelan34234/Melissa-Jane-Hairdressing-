@@ -88,7 +88,7 @@ const About = () => {
         <div className="relative z-10 section flex flex-col justify-center">
           <AnimatedSection>
             <div className="backdrop-blur-sm bg-white/10 p-10 rounded-3xl border border-white/20 shadow-xl max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center rounded-full border border-white/30 px-2.5 py-1.5 text-xs font-semibold bg-white/20 hover:bg-white/30 mb-6 backdrop-blur-sm text-white">
+              <div className="inline-flex items-center rounded-full border border-white/30 px-2.5 py-1.5 text-xs font-semibold bg-white/20 hover:bg-white/30 mb-4 backdrop-blur-sm text-white">
                 Our Journey Since 2015
               </div>
               
