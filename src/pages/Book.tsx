@@ -98,7 +98,7 @@ const Book = () => {
         <div className="relative z-10 section flex flex-col justify-center">
           <AnimatedSection>
             <div className="backdrop-blur-sm bg-white/10 p-10 rounded-3xl border border-white/20 shadow-xl max-w-3xl mx-auto text-center">
-              <Badge className="bg-white/20 text-white hover:bg-white/30 mb-6 backdrop-blur-sm">
+              <Badge className="bg-white/20 hover:bg-white/30 mb-6 backdrop-blur-sm" style={{ color: 'white' }}>
                 Book Your Appointment
               </Badge>
               

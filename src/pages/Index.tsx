@@ -28,7 +28,7 @@ const Index = () => {
         <div className="section relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="lg:w-1/2 text-center lg:text-left">
             <AnimatedSection>
-              <Badge variant="outline" className="bg-white/20 text-white border-white/30 mb-4 py-1.5 backdrop-blur-sm">
+              <Badge variant="outline" className="bg-white/20 border-white/30 mb-4 py-1.5 backdrop-blur-sm" style={{ color: 'white' }}>
                 Your Premier Destination for Beauty
               </Badge>
               
