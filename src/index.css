@@ -118,9 +118,8 @@
     .inline-flex.items-center.rounded-full.border,
     [class*="badge"],
     .bg-white\/20.text-white {
-      -webkit-text-fill-color: white !important;
+      -webkit-text-fill-color: currentColor !important;
       color: white !important;
-      text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
     }
   }
 }
